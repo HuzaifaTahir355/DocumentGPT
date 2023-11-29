@@ -1,0 +1,9 @@
+streamlit
+os
+PyPDF2
+docx
+langchain
+streamlit_chat
+openai==0.28
+sentence_transformers
+faiss-cpu
