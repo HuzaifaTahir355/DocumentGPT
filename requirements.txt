@@ -6,4 +6,3 @@ streamlit_chat
 openai==0.28
 sentence_transformers
 faiss-cpu
-os
