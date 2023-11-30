@@ -4,13 +4,14 @@ from PyPDF2 import PdfReader
 # import docx
 from langchain.chat_models import ChatOpenAI
 from langchain.llms import OpenAI
+import langchain.llms.HuggingFaceHub
 # from dotenv import load_dotenv
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
-from langchain import HuggingFaceHub
+#from langchain import HuggingFaceHub
 from streamlit_chat import message
 from langchain.callbacks import get_openai_callback
 from sentence_transformers import SentenceTransformer
