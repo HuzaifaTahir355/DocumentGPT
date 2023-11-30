@@ -16,8 +16,8 @@ from streamlit_chat import message
 from langchain.callbacks import get_openai_callback
 from sentence_transformers import SentenceTransformer
 
-openapi_key = st.secrets["OPENAI_API_KEY"]
-# openapi_key = ""
+#openapi_key = st.secrets["OPENAI_API_KEY"]
+openapi_key = ""
 
 # "with" notation
 def main():
@@ -35,7 +35,7 @@ def main():
     with st.sidebar:
         uploaded_files = st.file_uploader("Upload your file", type=['pdf'], accept_multiple_files=True)
         openai_api_key = openapi_key
-        # openai_api_key = st.text_input("OpenAI API Key", key=openapi_key , type="password")
+        openai_api_key = st.text_input("OpenAI API Key", key=openapi_key , type="password")
         process = st.button("Process")
     if process:
         if not openai_api_key:
